@@ -18,16 +18,16 @@ def main():
 
     # A dictionary linking a room to other rooms and carrying items
     rooms = {
-        'Main Deck': {'South': 'Storage Bay', 'North': 'Research Deck',
-                      'West': 'Rocket #9', 'East': 'Security Hallway', 'item': None},
-        'Rocket #9': {'East': 'Main Deck', 'item': 'Crow T. Robot'},  # Crow T. Robot
-        'Storage Bay': {'North': 'Main Deck', 'East': 'Kitchen', 'item': 'Repair Kit'},  # Repair Kit
-        'Kitchen': {'West': 'Storage Bay', 'item': 'Popcorn'},  # Popcorn
-        'Research Deck': {'East': 'Library', 'South': 'Main Deck', 'item': 'Nanobots'},  # Nanobots
-        'Library': {'West': 'Research Deck', 'item': 'Tom Servo'},  # Tom Servo
-        'Security Hallway': {'West': 'Main Deck', 'North': 'Theatre',
+        'Main Deck': {'Go South': 'Storage Bay', 'Go North': 'Research Deck',
+                      'Go West': 'Rocket #9', 'Go East': 'Security Hallway', 'item': None},
+        'Rocket #9': {'Go East': 'Main Deck', 'item': 'Crow T. Robot'},  # Crow T. Robot
+        'Storage Bay': {'Go North': 'Main Deck', 'Go East': 'Kitchen', 'item': 'Repair Kit'},  # Repair Kit
+        'Kitchen': {'Go West': 'Storage Bay', 'item': 'Popcorn'},  # Popcorn
+        'Research Deck': {'Go East': 'Library', 'Go South': 'Main Deck', 'item': 'Nanobots'},  # Nanobots
+        'Library': {'Go West': 'Research Deck', 'item': 'Tom Servo'},  # Tom Servo
+        'Security Hallway': {'Go West': 'Main Deck', 'Go North': 'Theatre',
                              'item': 'Star-Trek Replica Transporter'},  # Star-Trek Replica Transporter
-        'Theatre': {'South': 'Security Hallway', 'item': 'Self Destruct'}  # Self Destruct
+        'Theatre': {'Go South': 'Security Hallway', 'item': 'Self Destruct'}  # Self Destruct
     }
 
     # starting room
